@@ -1,0 +1,10 @@
+services:
+  server:
+    container_name: node-quake-parser-server
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+      - "3000:3000"
