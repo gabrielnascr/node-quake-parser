@@ -1,5 +1,7 @@
 import { Match } from "../entities/Match";
+import { Ranking } from "../entities/Ranking";
 
 export interface ILogRepository {
-  getMatches(): Promise<Match[]>;
+  getMatches(): Match[];
+  getPlayerRanking(): Ranking;
 }
