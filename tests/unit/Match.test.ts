@@ -1,4 +1,4 @@
-import { Match } from "../../domain/entities/Match";
+import { Match } from "../../src/domain/entities/Match";
 
 describe("Match Entity", () => {
   test("should create a intance of Match", () => {
