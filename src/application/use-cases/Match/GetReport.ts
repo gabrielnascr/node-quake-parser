@@ -1,4 +1,4 @@
-export interface IGetMatchesUseCase {
+export interface IGetReportUseCase {
   execute: () => Promise<Output>;
 }
 

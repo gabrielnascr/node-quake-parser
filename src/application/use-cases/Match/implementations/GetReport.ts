@@ -1,7 +1,7 @@
 import { ILogRepository } from "../../../../domain/interfaces/ILogRepository";
-import { IGetMatchesUseCase } from "../GetMatches";
+import { IGetReportUseCase } from "../GetReport";
 
-export class GetMatchesUseCase implements IGetMatchesUseCase {
+export class GetReportUseCase implements IGetReportUseCase {
   constructor(private logRepository: ILogRepository) {}
 
   async execute() {

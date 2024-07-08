@@ -34,10 +34,11 @@ export class KillHandler implements EventHandler {
       currentMatch.players.add(killedPlayer);
 
       if (killerPlayer === "<world>") {
-        currentMatch.kills[killedPlayer] =
-          (currentMatch.kills[killedPlayer] || 0) - 1;
-
-        ranking.updatePlayer(killedPlayer, -1, 0);
+        if (currentMatch.kills[killedPlayer] !== 0) {
+          currentMatch.kills[killedPlayer] =
+            (currentMatch.kills[killedPlayer] || 0) - 1;
+          ranking.updatePlayer(killedPlayer, -1, 0);
+        }
       }
     }
     return currentMatch;

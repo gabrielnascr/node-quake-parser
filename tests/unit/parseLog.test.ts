@@ -38,7 +38,7 @@ describe("parseLogData", () => {
     expect(match2.players.has("João")).toBe(true);
 
     expect(match2.kills["Luiz"]).toBe(1);
-    expect(match2.kills["Patrick"]).toBe(-1);
+    expect(match2.kills["Patrick"]).toBe(0);
     expect(match2.kills["Gabriel"]).toBe(1);
     expect(match2.kills["João"]).toBe(1);
   });
